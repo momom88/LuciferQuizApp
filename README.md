@@ -18,6 +18,8 @@ I choose a Lucifer television series.
   * Style heritage
  * Use of OnClickListener
  
+ <img src="/screenshot/Screenshot1.png" width="363" height="564"><img src="/screenshot/Screenshot2.png" width="363" height="564"><img src="/screenshot/Screenshot3.png" width="363" height="564">
+ 
  
  
  
