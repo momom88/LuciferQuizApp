@@ -1,5 +1,3 @@
-# LuciferQuizApp
-## Presentation
 This is the third project of the Google Developer Challenge Scholarship .The task given was to create a quiz app. I chose lucifer serial
 
 * Use of ScrollView
