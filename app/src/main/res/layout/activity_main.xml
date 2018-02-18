@@ -19,15 +19,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="20dp">
 
             <TextView
                 android:id="@+id/place"
                 style="@style/questions"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/place" />
 
             <RadioGroup
@@ -40,37 +38,28 @@
                 <RadioButton
                     android:id="@+id/questions1_a"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/losangeles" />
 
                 <RadioButton
                     android:id="@+id/questions1_b"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/london" />
 
                 <RadioButton
                     android:id="@+id/questions1_c"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/newyork" />
 
                 <RadioButton
                     android:id="@+id/questions1_d"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
                     android:text="@string/prague" />
             </RadioGroup>
 
             <TextView
                 android:id="@+id/nightclub"
                 style="@style/questions"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/nightclub" />
 
             <RadioGroup
@@ -83,29 +72,21 @@
                 <RadioButton
                     android:id="@+id/questions2_a"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/lux" />
 
                 <RadioButton
                     android:id="@+id/questions2_b"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/lucisplace" />
 
                 <RadioButton
                     android:id="@+id/questions2_c"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/hell" />
 
                 <RadioButton
                     android:id="@+id/questions2_d"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:layout_marginBottom="30dp"
                     android:text="@string/eden" />
             </RadioGroup>
@@ -127,29 +108,21 @@
                 <RadioButton
                     android:id="@+id/questions3_a"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/guitar" />
 
                 <RadioButton
                     android:id="@+id/questions3_b"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/bass" />
 
                 <RadioButton
                     android:id="@+id/questions3_c"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/piano" />
 
                 <RadioButton
                     android:id="@+id/questions3_d"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:layout_marginBottom="30dp"
                     android:text="@string/hesings" />
             </RadioGroup>
@@ -157,8 +130,6 @@
             <TextView
                 android:id="@+id/reveals"
                 style="@style/questions"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/reveals" />
 
             <RadioGroup
@@ -171,29 +142,21 @@
                 <RadioButton
                     android:id="@+id/questions4_a"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/head" />
 
                 <RadioButton
                     android:id="@+id/questions4_b"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/wings" />
 
                 <RadioButton
                     android:id="@+id/questions4_c"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/butt" />
 
                 <RadioButton
                     android:id="@+id/questions4_d"
                     style="@style/answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:layout_marginBottom="30dp"
                     android:text="@string/horns" />
             </RadioGroup>
@@ -201,15 +164,11 @@
             <TextView
                 android:id="@+id/demon"
                 style="@style/questions"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/demon" />
 
             <CheckBox
                 android:id="@+id/questions5_a"
                 style="@style/answer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:paddingLeft="24dp"
                 android:text="@string/maze"
                 android:textAppearance="?android:textAppearanceMedium"
@@ -218,8 +177,6 @@
             <CheckBox
                 android:id="@+id/questions5_b"
                 style="@style/answer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:paddingLeft="24dp"
                 android:text="@string/maze"
                 android:textAppearance="?android:textAppearanceMedium"
@@ -228,8 +185,6 @@
             <CheckBox
                 android:id="@+id/questions5_c"
                 style="@style/answer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:paddingLeft="24dp"
                 android:text="@string/buze"
                 android:textAppearance="?android:textAppearanceMedium"
@@ -238,8 +193,6 @@
             <CheckBox
                 android:id="@+id/questions5_d"
                 style="@style/answer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginBottom="30dp"
                 android:paddingLeft="24dp"
                 android:text="@string/buze"
@@ -249,15 +202,12 @@
             <TextView
                 android:id="@+id/year"
                 style="@style/questions"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/years" />
 
             <EditText
                 android:id="@+id/questions6"
                 style="@style/answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:inputType="number"
                 android:hint="@string/numbers"
                 android:textColorHint="#808080"
                 android:theme="@style/RadioButtonStyle" />
