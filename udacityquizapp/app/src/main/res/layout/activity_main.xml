@@ -207,6 +207,7 @@
             <EditText
                 android:id="@+id/questions6"
                 style="@style/answer"
+                android:inputType="number"
                 android:hint="@string/numbers"
                 android:textColorHint="#808080"
                 android:theme="@style/RadioButtonStyle" />

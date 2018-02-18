@@ -69,11 +69,18 @@ public class MainActivity extends AppCompatActivity {
         questions5_b = findViewById(R.id.questions5_b);
         boolean isMazek1Checked = questions5_b.isChecked();
 
+        questions5_c = findViewById(R.id.questions5_c);
+        boolean isBuzeChecked = questions5_c.isChecked();
+
+        questions5_d = findViewById(R.id.questions5_d);
+        boolean isBuze1Checked = questions5_d.isChecked();
+
         questions6 = findViewById(R.id.questions6);
         String answerNum = questions6.getText().toString();
 
 
-        points = calculateScore(isLosAngele, isLux, isPiano, isWings, isMazek1Checked, isMazekChecked, isAnswerNumber(answerNum));
+        points = calculateScore(isLosAngele, isLux, isPiano, isWings, isMazek1Checked,
+                isMazekChecked, isBuzeChecked, isBuze1Checked, isAnswerNumber(answerNum));
         Resources res = getResources();
         if (points == 7) {
             result = res.getString(R.string.result1, points);
@@ -92,14 +99,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isAnswerNumber(String answerNum) {
-        return (answerNum.contentEquals("5"));
+        try {
+            int number = Integer.parseInt(answerNum);
+            if (number == 5) {
+                return (true);
+            } else return (false);
+        }catch(Exception ex)
+            {
+                return false;
+            }
     }
 
     /**
      * This method is count our score
      */
 
-    public int calculateScore(boolean isLosAngeles, boolean isLux, boolean isPiano, boolean isWings, boolean isMazek1Checked, boolean isMazekChecked, boolean isAnswerNumber) {
+    public int calculateScore(boolean isLosAngeles, boolean isLux, boolean isPiano,
+                              boolean isWings, boolean isMazek1Checked, boolean isMazekChecked,
+                              boolean isBuzeChecked, boolean isBuze1Checked,
+                              boolean isAnswerNumber) {
         int points = 0;
         if (isLosAngeles) {
             points += 1;
@@ -124,6 +142,15 @@ public class MainActivity extends AppCompatActivity {
         if (isMazekChecked) {
             points += 1;
         }
+
+        if (isBuzeChecked) {
+            points -= 1;
+        }
+
+        if (isBuze1Checked) {
+            points -= 1;
+        }
+
         if (isAnswerNumber) {
             points += 1;
         }
